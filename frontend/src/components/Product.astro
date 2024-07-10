@@ -1,7 +1,7 @@
 ---
 import Button from "./Button.astro";
 ---
-<section>
+<section id="product">
     <div>
         <div class="header">
             <img class="icon" src="/white_star.svg">
@@ -41,12 +41,13 @@ import Button from "./Button.astro";
     }
     section > img {
         position: absolute;
-        left: -20%;
-        top: -25%;
+        left: -15%;
+        top: -50%;
         object-position: center;
         overflow: visible;
         animation: float2 3s infinite;
         z-index: -1;
+        width: 800px;
     }
     @keyframes float2 {
         0% {

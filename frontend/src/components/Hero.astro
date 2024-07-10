@@ -3,7 +3,7 @@ import Button from "./Button.astro";
 ---
 <section>
     <div class="splash">
-        <img src="/background.jpg" id="background" />
+        <img src="/background.png" id="background" />
         <img src="/integrate.svg" class="integrate" />
     </div>
     <div class="details">
@@ -28,13 +28,13 @@ import Button from "./Button.astro";
     }
     .splash {
         width: 100%;
-        height: 700px;
+        height: 560px;
         position: relative;
     }
     .splash .integrate {
         width: 1000px;
         position: absolute;
-        top: 50%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -55,14 +55,14 @@ import Button from "./Button.astro";
     .details {
         position: relative;
         text-align: center;
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .details img{
         position: absolute;
         left: 50%;
-        top: 0;
-        transform: translate(-50%, -70%);
-        animation: float 4s infinite ease-in-out;
+        top: -10%;
+        transform: translate(-50%, -70%); /* star movement */
+        animation: float 5s infinite ease-in-out; /* star backdrop */
     }
     .btn {
         margin: 40px auto;
